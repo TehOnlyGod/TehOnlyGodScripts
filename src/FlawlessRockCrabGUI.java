@@ -1,5 +1,7 @@
 
 import java.awt.BorderLayout;
+
+import javax.imageio.ImageIO;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
@@ -12,6 +14,10 @@ import javax.swing.JComboBox;
 import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.image.BufferedImage;
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 
 import javax.swing.ImageIcon;
 import javax.swing.DefaultComboBoxModel;
@@ -28,7 +34,7 @@ public class FlawlessRockCrabGUI extends JFrame {
 	private JComboBox comboBox;
 	private JButton btnNewButton;
 	private boolean START = false;
-
+	
 
 	public FlawlessRockCrabGUI() {
 		setTitle("Flawless Rock Crabs");
@@ -40,7 +46,16 @@ public class FlawlessRockCrabGUI extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		contentPane.setLayout(new BorderLayout(0, 0));
 		setContentPane(contentPane);
-		
+		BufferedImage img = null;
+		try {
+			img = ImageIO.read(new URL("http://img99.imageshack.us/img99/6393/finalbotlogo1.png"));
+		} catch (MalformedURLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		JPanel panel = new JPanel();
 		panel.setBackground(Color.DARK_GRAY);
 		contentPane.add(panel, BorderLayout.CENTER);
@@ -52,7 +67,11 @@ public class FlawlessRockCrabGUI extends JFrame {
 		panel.setLayout(gbl_panel);
 		
 		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon("Images/final_botLogo1.png"));
+		try{
+		lblNewLabel.setIcon(new ImageIcon(img));
+		} catch (Exception e){
+			
+		}
 		GridBagConstraints gbc_lblNewLabel = new GridBagConstraints();
 		gbc_lblNewLabel.gridwidth = 2;
 		gbc_lblNewLabel.gridheight = 4;
