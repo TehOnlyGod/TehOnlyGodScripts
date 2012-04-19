@@ -10,7 +10,6 @@ import org.powerbot.game.api.util.Random;
 import org.powerbot.game.api.util.Time;
 import org.powerbot.game.api.wrappers.node.Item;
 
-import us.gamingautomated.methods.CustomMethods;
 
 public class EatFood extends Strategy implements Task{
 	protected int FOOD = 0;

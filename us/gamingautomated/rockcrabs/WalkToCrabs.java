@@ -7,8 +7,6 @@ import org.powerbot.game.api.methods.tab.Inventory;
 import org.powerbot.game.api.wrappers.Area;
 import org.powerbot.game.api.wrappers.Tile;
 
-import us.gamingautomated.methods.CustomMethods;
-import us.gamingautomated.methods.Paths;
 
 public class WalkToCrabs  extends Strategy implements Task{
 	protected final Area CRABAREA = new Area(new Tile(2692,3731,0), new Tile(2730,3705,0));

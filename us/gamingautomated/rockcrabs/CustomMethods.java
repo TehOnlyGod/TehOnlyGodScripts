@@ -1,4 +1,4 @@
-package us.gamingautomated.methods;
+package us.gamingautomated.rockcrabs;
 
 
 import java.awt.Color;

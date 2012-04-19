@@ -9,7 +9,6 @@ import org.powerbot.game.api.wrappers.Area;
 import org.powerbot.game.api.wrappers.Tile;
 import org.powerbot.game.bot.event.listener.MessageListener;
 
-import us.gamingautomated.methods.CustomMethods;
 
 public class HotFixes extends Strategy implements Task{
 	public final Area area = new Area(new Tile[] {

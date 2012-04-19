@@ -15,7 +15,6 @@ import org.powerbot.game.api.wrappers.Area;
 import org.powerbot.game.api.wrappers.Tile;
 import org.powerbot.game.api.wrappers.interactive.NPC;
 
-import us.gamingautomated.methods.CustomMethods;
 
 public class KillShit extends Strategy implements Task{
 	protected final Area CRABAREA = new Area(new Tile(2690,3731,0), new Tile(2730,3708,0));

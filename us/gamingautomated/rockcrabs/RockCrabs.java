@@ -21,7 +21,6 @@ import org.powerbot.game.api.util.Random;
 import org.powerbot.game.api.util.Time;
 import org.powerbot.game.bot.event.listener.PaintListener;
 
-import us.gamingautomated.methods.CustomMethods;
 
 
 @Manifest(name = "Flawless Rock Crabs", authors = "TehOnlyGod", version = 1.0, description = "Designed with everyone in mind!", premium = true, website = "")

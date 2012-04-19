@@ -14,7 +14,6 @@ import org.powerbot.game.api.util.Time;
 import org.powerbot.game.api.wrappers.Area;
 import org.powerbot.game.api.wrappers.Tile;
 import org.powerbot.game.api.wrappers.interactive.NPC;
-import us.gamingautomated.methods.CustomMethods;
 
 public class RegainAgro extends Strategy implements Task{
 	protected FlawlessRockCrabGUI gui;

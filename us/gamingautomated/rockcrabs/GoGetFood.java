@@ -12,8 +12,6 @@ import org.powerbot.game.api.util.Time;
 import org.powerbot.game.api.wrappers.Area;
 import org.powerbot.game.api.wrappers.Tile;
 
-import us.gamingautomated.methods.Bank;
-import us.gamingautomated.methods.CustomMethods;
 
 public class GoGetFood extends Strategy implements Task{
 	Area CRABAREA = new Area(new Tile(2692,3731,0), new Tile(2730,3705,0));
