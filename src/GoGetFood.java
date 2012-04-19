@@ -1,4 +1,4 @@
-package us.gamingautomated.rockcrabs;
+
 
 import org.powerbot.concurrent.Task;
 import org.powerbot.concurrent.strategy.Strategy;

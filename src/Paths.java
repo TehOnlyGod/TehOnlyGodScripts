@@ -1,4 +1,4 @@
-package us.gamingautomated.rockcrabs;
+
 
 import org.powerbot.game.api.wrappers.Tile;
 

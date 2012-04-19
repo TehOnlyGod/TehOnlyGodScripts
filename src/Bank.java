@@ -1,4 +1,4 @@
-package us.gamingautomated.rockcrabs;
+
 import org.powerbot.game.api.methods.Settings;
 import org.powerbot.game.api.methods.Walking;
 import org.powerbot.game.api.methods.Widgets;
