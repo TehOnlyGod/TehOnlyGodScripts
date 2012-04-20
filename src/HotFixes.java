@@ -4,7 +4,10 @@
 
 import org.powerbot.concurrent.Task;
 import org.powerbot.concurrent.strategy.Strategy;
+import org.powerbot.game.api.methods.Tabs;
+import org.powerbot.game.api.methods.Widgets;
 import org.powerbot.game.api.methods.interactive.Players;
+import org.powerbot.game.api.util.Time;
 import org.powerbot.game.api.wrappers.Area;
 import org.powerbot.game.api.wrappers.Tile;
 import org.powerbot.game.bot.event.listener.MessageListener;
@@ -45,10 +48,13 @@ public class HotFixes extends Strategy implements Task{
 	}
 	@Override
 	public boolean validate(){
-		return ((!Players.getLocal().isInCombat() && area.contains(Players.getLocal().getLocation())) || (CRABAREA.contains(Players.getLocal().getLocation()) && Players.getLocal().isInCombat()));
+		return ((Tabs.getCurrent() != Tabs.INVENTORY && CRABAREA.contains(Players.getLocal().getLocation()))||(!Players.getLocal().isInCombat() && area.contains(Players.getLocal().getLocation())) || (CRABAREA.contains(Players.getLocal().getLocation()) && Players.getLocal().isInCombat()));
 	}
 	@Override
 	public void run() {
+		if(Tabs.getCurrent() != Tabs.INVENTORY && CRABAREA.contains(Players.getLocal().getLocation())){
+			Widgets.get(548,93).click(true);
+		}
 		if(!Players.getLocal().isInCombat() && area.contains(Players.getLocal().getLocation())){
 		CustomMethods.Traverse(path);
 		} else if(CRABAREA.contains(Players.getLocal().getLocation()) && Players.getLocal().isInCombat()){

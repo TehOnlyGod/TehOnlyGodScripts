@@ -1,6 +1,6 @@
 
 
-import java.nio.file.Path;
+
 
 import org.powerbot.concurrent.Task;
 import org.powerbot.concurrent.strategy.Strategy;
