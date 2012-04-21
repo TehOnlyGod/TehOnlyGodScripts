@@ -16,12 +16,13 @@ import org.powerbot.game.api.wrappers.Tile;
 public class GoGetFood extends Strategy implements Task{
 	Area CRABAREA = new Area(new Tile(2692,3731,0), new Tile(2730,3705,0));
 	public final Tile[] ESCAPE_PATH = {
-			new Tile(2718, 3726, 0), new Tile(2713, 3725, 0),
-			new Tile(2708, 3725, 0), new Tile(2706, 3720, 0),
-			new Tile(2706, 3715, 0), new Tile(2705, 3710, 0),
-			new Tile(2703, 3705, 0), new Tile(2701, 3700, 0),
-			new Tile(2697, 3697, 0), new Tile(2695, 3691, 0),
-			new Tile(2694, 3684, 0) 
+			new Tile(2694, 3722, 0), new Tile(2698, 3725, 0),
+			new Tile(2703, 3727, 0), new Tile(2708, 3728, 0),
+			new Tile(2713, 3727, 0), new Tile(2715, 3722, 0),
+			new Tile(2715, 3717, 0), new Tile(2715, 3712, 0),
+			new Tile(2718, 3708, 0), new Tile(2722, 3705, 0),
+			new Tile(2724, 3700, 0), new Tile(2726, 3695, 0),
+			new Tile(2729, 3691, 0) 
 	};
 
 	public final Area BELOWCRABAREA = new Area(new Tile[] {
