@@ -10,7 +10,7 @@ SET cc=javac
 :: Add this (below,) to the cflags if you are getting unchecked errors.
 :: -Xlint:unchecked
 SET cflags=-deprecation
-SET scripts=Scripts/us/tehonlygod/rockcrabs
+SET scripts=Scripts/src/us/tehonlygod/rockcrabs
 SET jarpath=RSBot-4*.jar
 
 ECHO Looking for JDK
