@@ -94,11 +94,12 @@ PaintListener, MouseListener{
 		final int hpExp = Skills.getExperiences()[Skills.CONSTITUTION]
 				- startConExperience;
 		String message = "Elapsed time: " + formatTime(elapsedTime) + "";
-		int nextLevelXp = (Skills.getExperienceAt(Skills.getLevel(skill)+1) - Skills.getExperience(skill));
+		int nextLevelXp =Skills.getExperienceToLevel(skill, Skills.getLevel(skill)+1);
+		
 
 		int xpPerHour = (int) ((3600000.0 / elapsedTime) * totalXp);
 		long nextLevelTime = (long) ((double) nextLevelXp / (double) xpPerHour * 3600000);
-		int nextLevelXpHp = (Skills.getExperienceAt(Skills.getLevel(Skills.CONSTITUTION)+1) - Skills.getExperience(Skills.CONSTITUTION));
+		int nextLevelXpHp = Skills.getExperienceToLevel(Skills.CONSTITUTION, Skills.getLevel(Skills.CONSTITUTION)+1);
 		int xpPerHourHp = (int) ((3600000.0 / elapsedTime) * hpExp);
 		long nextLevelTimeHp = (long) ((double) nextLevelXpHp
 				/ (double) xpPerHourHp * 3600000);
